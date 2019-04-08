@@ -1,0 +1,19 @@
+"--- search options ------------
+set incsearch       " show 'best match so far' as you type
+set hlsearch        " highlight the items found by the search
+set ignorecase      " ignores case of letters on searches
+set smartcase       " Override the 'ignorecase' option if the search pattern contains upper case characters
+
+vnoremap y "+y
+nnoremap yy "+yy
+
+" ctrl+v paste in insert mode
+inoremap <C-v> <esc>"+p
+
+" ctrl+c copy in visual mode
+vnoremap <C-c> "+y
+
+"nnoremap p "+p
+"vnoremap p "+p
+"nnoremap dd "+dd
+"vnoremap d "+d
